@@ -27,23 +27,29 @@ D191 Performance Assessment
 One real world business report that can be created from the attached Data Sets and Associated Dictionaries is to keep track of customer's who spend the most money at the store and when their last visit was. This will allow management to develop strategies for creating promotions that will influence top customers to return for more rentals.
 
 ## 1. Describe the data used for the report.
-The data used for this report is the customer information and payment information. Customer information includes **name** and **email**. Payment information includes **payment date** and **payment amount**. This data, combined, can tell management which customers are spending the most money and the time since their last payment. 
+The data used for this report is the customer information and payment information. Customer information includes **name** and **email**. Payment information includes **payment date** and **payment amount**. This data, combined, can tell management which customers are spending the most money and the time since their last payment.
 
 ## 2. Identify two or more specific tables from the given dataset that will provide the data necessary for the detailed and the summary sections of the report.
 The two tables that will provide the data necessary for both the detailed and summary sections of the report or the **customer** table and the **payment** table.
 
 ## 3. Identify the specific fields that will be included in the detailed and the summary sections of the report. 
 **Detailed**
-- customer.customer_id
-- customer.first_name
-- customer.last_name
-- customer.email
-- payment.payment_id
-- payment.payment_date
-- payment.amount
+- customer_id
+- first_name
+- last_name
+- email
+- payment_id
+- payment_date
+- amount
+
+**Summary**
+- customer_name
+- email
+- last_payment_date
+- total_payments
 
 ## 4. Identify one field in the detailed section that will require a custom transformation and explain why it should be transformed. For example, you might translate a field with a value of ‘N’ to ‘No’ and ‘Y’ to ‘Yes’.
-The values in the **payment.amount** field will be translated by summing all of the payments for a respective **customer_id**. This will allow for better analysis of top spending customers without having to manually add together many payments.
+The values in the **amount** field will be translated by summing all of the payments for a respective **customer_id**. This will allow for better analysis of top spending customers without having to manually add together many payments.
 
 ## 5. Explain the different business uses of the detailed and the summary sections of the report.
 The detailed section can be used by stakeholders to see the individual payments for each customer and gleam insights such as frequency of payments, largest single payment, etc. From this, the stakeholders can look into implementing benefits for customers who rent more frequently or who spend more in a single transaction.
