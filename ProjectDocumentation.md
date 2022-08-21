@@ -174,7 +174,7 @@ The above cron command will run and update the tables at the beginning of each m
 
 ---
 # G. Provide a Panopto video recording that includes a demonstration of the functionality of the code used for the analysis and a summary of the programming environment. 
-**Link**: 
+**Link**: https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=279f9345-a5ee-42c2-901e-aef8017b91a2
 
 ---
 # H. Record the web sources you used to acquire data or segments of third-party code to support the application if applicable. Be sure the web sources are reliable.
