@@ -32,19 +32,19 @@ The two tables that will provide the data necessary for both the detailed and su
 
 ## 3. Identify the specific fields that will be included in the detailed and the summary sections of the report. 
 **Detailed**
-- customer_id
-- first_name
-- last_name
-- email
-- payment_id
-- payment_date
-- amount
+- customer_id integer
+- first_name varchar (45)
+- last_name varchar (45)
+- email varchar (90)
+- payment_id integer
+- payment_date timestamp
+- amount numeric(5,2)
 
 **Summary**
-- customer_name
-- email
-- last_payment_date
-- total_payments
+- customer_name varchar (100)
+- email varchar (90)
+- last_payment_date date
+- total_payments numeric(5,2)
 
 ## 4. Identify one field in the detailed section that will require a custom transformation and explain why it should be transformed. For example, you might translate a field with a value of ‘N’ to ‘No’ and ‘Y’ to ‘Yes’.
 The values in the **amount** field will be translated by summing all of the payments for a respective **customer_id**. This will allow for better analysis of top spending customers without having to manually add together many payments.
